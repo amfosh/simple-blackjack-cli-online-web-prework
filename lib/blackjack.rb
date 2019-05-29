@@ -46,6 +46,7 @@ def invalid_command
   prompt_user
   get_user_input
 end
+end
 
 def runner
   welcome 
@@ -55,5 +56,6 @@ def runner
 end
   display_card_total(card_total)
   end_game(card_total)
+end
 end
 end
