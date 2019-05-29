@@ -37,9 +37,6 @@ def hit?(current_card_total)
     current_card_total += deal_card
   else 
     invalid_command
-  end
-end
-  return current_card_total
 end
 
 def invalid_command
@@ -55,6 +52,4 @@ def runner
   card_total = hit?(card_total)
   display_card_total(card_total)
   end_game(card_total)
-end
-end
 end
