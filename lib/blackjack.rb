@@ -52,13 +52,3 @@ end
 #####################################################
 
 def runner
-  welcome
-  hand = initial_round
-  until hand > 21
-   hit?
-   display_card_total
-else 
-end_game
-end
-end
-end
