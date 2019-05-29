@@ -10,7 +10,7 @@ def prompt_user
   puts "Type 'h' to hit or 's' to stay"
 end
 
-def display_card_total
+def display_card_total(card_total)
   card_total = number
   puts "Your cards add up to #{card_total}"
 end
@@ -19,8 +19,8 @@ def get_user_input
   gets.chomp
 end
 
-def end_game(card_total)
-  if number > 21
+def end_game
+  if card_total > 21
     puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
@@ -34,10 +34,10 @@ end
 
 def hit?(card_total)
   prompt_user
-  user_input = get_user_input
-  if user_input == "h"
+  get_user_input
+  if get_user_input == "h"
     card_total += deal_card
-  elseif user_input == "s"
+  elseif gets_user_input == "s"
     card_total
  else
     invalid_command
