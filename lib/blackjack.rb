@@ -37,7 +37,7 @@ def hit?(num)
     num += deal_card
   else
     invalid_command
-    end
+  end
   return num
 end
 
