@@ -23,7 +23,6 @@ def end_game
   if card_total > 21
     puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
-end 
 
 def initial_round
   initial_round = deal_card
