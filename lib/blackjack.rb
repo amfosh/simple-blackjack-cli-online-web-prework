@@ -25,11 +25,11 @@ def end_game
 end
 
 def initial_round
-  display_card_total = deal_card + deal_card
+  card_total = deal_card + deal_card
   return display_card_total
 end
 
-def hit?(number)
+def hit?(card_total)
   prompt_user
   get_user_input
   if user_input == "h"
